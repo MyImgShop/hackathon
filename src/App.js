@@ -1,6 +1,10 @@
 import React from 'react';
 import Boutons from './components/footer/Boutons'
 import CardImages from './components/cardImages/cardImages';
+import VoitureImage from './components/voitureImage/VoitureImage'
+import ImagesVilles from './components/imagesVilles/ImagesVilles'
+import ImagesMontagnes from './components/imagesMontagnes/ImagesMontagnes'
+import ImagesPlages from './components/imagesPlages/ImagesPlages'
 import Footer  from './components/footer/Footer'
 
 
@@ -18,6 +22,7 @@ export default class App extends React.Component{
       class8 : "d-none",
       class9 : "d-none",
       class10 : "d-none",
+      totalPanier : 0
     }
   }
   affichePaysage = () => {
@@ -76,39 +81,11 @@ export default class App extends React.Component{
     h.class10 = "d-none"
     this.setState(h)
   }
-  afficheNourriture = () => {
-    let i = this.state
-    i.class1  = "d-none"
-    i.class2 = "d-none"
-    i.class3 = "d-none"
-    i.class4 = "d-none"
-    i.class5 = "d-block"
-    i.class6 = "d-none"
-    i.class7 = "d-none"
-    i.class8 = "d-none"
-    i.class9 = "d-none"
-    i.class10 = "d-none"
-    this.setState(i)
-  }
-  afficheAnimaux = () => {
-    let j = this.state
-    j.class1  = "d-none"
-    j.class2 = "d-none"
-    j.class3 = "d-none"
-    j.class4 = "d-none"
-    j.class5 = "d-none"
-    j.class6 = "d-block"
-    j.class7 = "d-none"
-    j.class8 = "d-none"
-    j.class9 = "d-none"
-    j.class10 = "d-none"
-    this.setState(j)
-  }
   afficheVoitures = () => {
     let e = this.state
-    e.class1  = "d-none"
+    e.class1 = "d-none"
     e.class2 = "d-none"
-    e.class3 = "d-bnone"
+    e.class3 = "d-none"
     e.class4 = "d-none"
     e.class5 = "d-none"
     e.class6 = "d-none"
@@ -118,54 +95,20 @@ export default class App extends React.Component{
     e.class10 = "d-none"
     this.setState(e)
   }
-  afficheDrapeau = () => {
-    let d = this.state
-    d.class1  = "d-none"
-    d.class2 = "d-none"
-    d.class3 = "d-none"
-    d.class4 = "d-none"
-    d.class5 = "d-none"
-    d.class6 = "d-none"
-    d.class7 = "d-none"
-    d.class8 = "d-block"
-    d.class9 = "d-none"
-    d.class10 = "d-none"
-    this.setState(d)
+  ajouterPanier = () => {
+    let z = this.state 
+    z.totalPanier += 19.99
+    this.setState(z)
   }
-  afficheTableau = () => {
-    let c = this.state
-    c.class1  = "d-none"
-    c.class2 = "d-none"
-    c.class3 = "d-none"
-    c.class4 = "d-none"
-    c.class5 = "d-none"
-    c.class6 = "d-none"
-    c.class7 = "d-none"
-    c.class8 = "d-none"
-    c.class9 = "d-block"
-    c.class10 = "d-none"
-    this.setState(c)
-  }
-  afficheTechnologie = () => {
-    let f = this.state
-    f.class1  = "d-none"
-    f.class2 = "d-none"
-    f.class3 = "d-none"
-    f.class4 = "d-none"
-    f.class5 = "d-none"
-    f.class6 = "d-none"
-    f.class7 = "d-none"
-    f.class8 = "d-none"
-    f.class9 = "d-none"
-    f.class10 = "d-block"
-    this.setState(f)
-  }
-
   render(){
     return(
       <div> 
-        <Boutons affichePaysage={() => this.affichePaysage()} afficheVilles={() => this.afficheVilles()} afficheMontagne={() => this.afficheMontagne()} affichePlage={() => this.affichePlage()} afficheNourriture={() => this.afficheNourriture()} afficheVoitures={() => this.afficheVoitures()}  afficheDrapeau={() => this.afficheDrapeau()} afficheTechnologie={() => this.afficheTechnologie()} afficheTableau={() => this.afficheTableau() }  afficheAnimaux={() => this.afficheAnimaux()} />
-        <CardImages class1={this.state.class1} class2={this.state.class2} class3={this.state.class3} class4={this.state.class4} class5={this.state.class5} class6={this.state.class6} class7={this.state.class7} class8={this.state.class8}  class9={this.state.class9} class10={this.state.class10}  />
+        <Boutons affichePaysage={() => this.affichePaysage()} afficheVilles={() => this.afficheVilles()} afficheMontagne={() => this.afficheMontagne()} affichePlage={() => this.affichePlage()} afficheVoitures={() => this.afficheVoitures()}  />
+        <CardImages class1={this.state.class1}  />
+        <VoitureImage class7={this.state.class7}  />
+        <ImagesVilles class2={this.state.class2} />
+        <ImagesMontagnes class3={this.state.class3} />
+        <ImagesPlages class4={this.state.class4} />
         <Footer />
       </div>
     )

@@ -5,15 +5,15 @@ import "../../sass/style.sass";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
-export default class CardImages extends React.Component {
+export default class ImagesVilles extends React.Component {
     render() {
         return (
-            <div className={this.props.class1}>
+            <div className={this.props.class2}>
                 {/* Row 1 */}
                 <div className="row img">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img1.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img1.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Mesa Arch, US
@@ -25,7 +25,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img2.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img2.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Brand, Telfs, Austria
@@ -37,7 +37,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img3.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img3.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Shrine Pass Road, US
@@ -49,7 +49,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img4.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img4.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Opert, Semnan, Iran
@@ -64,7 +64,7 @@ export default class CardImages extends React.Component {
                 <div className="row img">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img5.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img5.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Lake Atitlan, Guatermala
@@ -76,7 +76,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img6.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img6.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />North Khorasan Province, Iran
@@ -88,7 +88,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img7.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img7.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Reflection Lakes, US
@@ -100,7 +100,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img8.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img8.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Atacama Desert, Chine
@@ -115,7 +115,7 @@ export default class CardImages extends React.Component {
                 <div className="row img">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img9.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img9.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Aerial River, Iceland
@@ -127,7 +127,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img10.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img10.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Aerial View of Beach
@@ -139,7 +139,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img11.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img11.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Mountian Village, Italy
@@ -151,7 +151,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img12.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img12.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Lac de Moiry, Switzerland
@@ -166,7 +166,7 @@ export default class CardImages extends React.Component {
                 <div className="row img">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img13.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img13.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Burren Way, Ireland
@@ -178,7 +178,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img14.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img14.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Kauai County, US
@@ -190,7 +190,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img15.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img15.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Eagle Canyon, Canada
@@ -202,7 +202,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img16.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img16.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Procida, Italy
@@ -217,7 +217,7 @@ export default class CardImages extends React.Component {
                 <div className="row img">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img17.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img17.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Pelasgia, Greece
@@ -229,7 +229,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img18.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img18.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Angle Tarn, UK
@@ -241,7 +241,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img19.jpeg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img19.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Willow River, US
@@ -253,7 +253,7 @@ export default class CardImages extends React.Component {
                     </div>
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
-                            <img src="../../img/paysages/img20.jpg" alt="a" className="card-img-top border-none" />
+                            <img src="../../img/villes/img20.jpg" alt="a" className="card-img-top border-none" />
                             <div className="card-body bg-dark text-white text-center">
                                 <h5 className="card-title">
                                     <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />Bergen, Norway

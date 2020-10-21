@@ -1,86 +1,13 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'
-@import "./_fonts.sass"
 
-*
-    font-family: 'Staatliches', cursive
+// Boutons Catégories
+@import "./modules/_boutonsCat.sass"
 
-.navbar
-    background-color: black
-    border-bottom: #DC3545 2px solid
-    z-index:1
+// Catégories Images
+@import "./modules/_catImages.sass"
 
-.titresite
-    margin-top: 5%
-    text-align: center
-    font-size: 700%
+// Footer
+@import "./modules/_footer.sass"
 
-.promodiv
-
-    .promo
-        font-size: 200%
-        color: black
-
-.titresitenav
-
-.imgpromo
-    margin: 0px
-    width: 80px
-    
-.promocompte
-    background-color: black
-    color: white
-    padding: 100px
-    z-index: 1
-    position: relative
-
-
-.souligne
-    border-bottom: solid 2px #DC3545
-
-#mySidenav a
-    margin-top: 100px
-    position: absolute
-    left: -180px
-    transition: 0.5s
-    padding: 15px
-    width: 210px
-    padding: 60px
-    text-decoration: none
-    font-size: 25px
-    color: white
-    border-radius: 0 10px 10px 0
-    border-right: solid white 3px
-    border-top: solid white 3px
-    border-bottom: solid white 3px
-
-    &:hover
-        left: 0
-        
-
-#about
-    top: 5px
-    background-color: black
-
-
-#blog
-    top: 175px
-    background-color: black
-
-#projects
-    top: 345px
-    background-color: black
-
-#contact
-    top: 515px
-    background-color: black
-
-.imgacc
-    margin-left: 37%
-
-.titrecolor
-    color: black
-    -webkit-text-stroke-width: 1px
-    -webkit-text-stroke-color: white
-
-.text
-    font-size: 40px
+// Home
+@import "./modules/_home.sass"

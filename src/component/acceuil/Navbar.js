@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default class Navbar extends React.Component {
-
     constructor() {
         super();
         this.state = {
@@ -9,7 +8,6 @@ export default class Navbar extends React.Component {
             heure: 13,
             minute: 49,
             seconde: 25,
-            
         }
     }
 
@@ -21,7 +19,6 @@ export default class Navbar extends React.Component {
             x.seconde = 59;
             if (x.minute > 0) {
                 x.minute -= 1;
-
             } else if (x.minute === 0) {
                 x.minute = 59;
                 if (x.heure > 0) {
@@ -30,9 +27,7 @@ export default class Navbar extends React.Component {
                     x.heure = 23
                     if (x.jour > 0) {
                         x.jour -= 1;
-
-                    } else if (x.jour == 0 && x.heure == 0 && x.minute == 0 && x.seconde == 0) {
-
+                    } else if (x.jour === 0 && x.heure === 0 && x.minute === 0 && x.seconde === 0) {
                         x.jour = 0
                         x.heure = 0
                         x.minute = 0
@@ -41,11 +36,8 @@ export default class Navbar extends React.Component {
                 }
             }
         }
-
         this.setState(x);
     }
-
-
 
     componentDidMount() {
         this.xID = setInterval(
@@ -58,9 +50,9 @@ export default class Navbar extends React.Component {
     componentWillUnmount() {
         clearInterval(this.xID)
     }
+
     render() {
         return (
-
             <header>
                 <div className="pos-f-t" >
                     <div className="collapse" id="navbarToggleExternalContent"  >
@@ -70,7 +62,6 @@ export default class Navbar extends React.Component {
                                     <h1>NOS <span className="text-danger"> PROMOS </span></h1>
                                     <h2>TOUT A -50% DANS :</h2>
                                 </div>
-
                                 <div className="row d-flex align-items-center pt-5">
                                     <div className="col-3">
                                         <h1>Jours.</h1>
@@ -110,14 +101,7 @@ export default class Navbar extends React.Component {
                 <h4 className="text-white titresite ">My<span className="titrecolor">Shop</span>.</h4>
                 <p className=" text text-light text-center">Votre <span className="titrecolor">cite</span> d'achat <span className="titrecolor">d'images</span> à plus <span className="text-danger">bas</span>  prix.</p>
                 <img className="imgacc" src="./img/robot.gif" alt="" />
-                <div id="mySidenav" class="sidenav">
-                    <a href="#" id="about">ACCEUIL</a>
-                    <a href="#" id="blog">CATEGORIES</a>
-                    <a href="#" id="projects">PANIER</a>
-                    <a href="#" id="contact">ABOUT</a>
-                </div>
             </header>
-
         )
     }
 }

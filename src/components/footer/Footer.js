@@ -1,34 +1,33 @@
 import React from 'react';
 
-export default class Footer extends React.Component{
-    render(){
-        return(
-            <div className="d-flex flex-column">
+export default class Footer extends React.Component {
+    render() {
+        return (
+            <div className="footer">
                 <div className="row">
-                    <div className="col-4 p-3 bg-dark text-white">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident fugiat expedita minima, ullam fugit ipsam rerum laborum dolor quaerat. Quidem id enim quisquam vel!</p>
+                    <div className="col-4 infos">
+                        <h5>MYSHOP</h5>
+                        <p>MYSHOP est un site qui permet d'acheter
+                            des photos de haute qualité.<br /><br />
+                            Boutique d'images en ligne.</p>
                     </div>
-                    <div className="col-4 p-3 bg-dark text-white text-center">
-                        <p>Contact</p>
-                        <p>FAQ</p>
-                        <a href="###" className="text-white">Back to top</a>
+                    <div className="col-4 links">
+                        <h5>LINKS</h5>
+                        <a href="###">Accueil</a>
+                        <a href="###">Categories</a>
+                        <a href="###">Panier</a>
+                        <a href="###">Contact</a>
                     </div>
-                    {/* badge juste visuelle avec les categories */}
-                    <div className="col-4 p-3 bg-dark text-white d-flex flex-wrap">
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Paysage</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Villes</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Montagnes</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Plages</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Nourritures</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Animaux</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Voiture</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Drapeau</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Tableau Art</badge>
-                       <badge className="my-2 mx-2 p-1 border border-white rounded-pill">Technologie</badge>
+                    <div className="col-4">
+                        <h5>TAGS</h5>
+                        <button>Paysages</button><button>Villes</button><button>Montagnes</button><br />
+                        <button>Plages</button><button>Nourritures</button><button>Animaux</button><br />
+                        <button>Voitures</button><button>Drapeau</button><button>Tableau Art</button>
+                        <button>Technologies</button>
                     </div>
                 </div>
-                <p className="bg-danger col-12 text-center"> &copy;Mouad, &copy;Karis, &copy;Liam </p>
+                <p className="col-12 m-0 bg-danger p-3 text-white text-center">&copy; Karis &copy; Liam &copy; Mouad</p>
             </div>
-        )   
+        )
     }
 }

@@ -8,7 +8,7 @@ export default class Footer extends React.Component{
                     <div className="col-4 p-3 bg-dark text-white">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident fugiat expedita minima, ullam fugit ipsam rerum laborum dolor quaerat. Quidem id enim quisquam vel!</p>
                     </div>
-                    <div className="col-4 p-3 bg-dark text-white">
+                    <div className="col-4 p-3 bg-dark text-white text-center">
                         <p>Contact</p>
                         <p>FAQ</p>
                         <a href="###" className="text-white">Back to top</a>

@@ -5,7 +5,7 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 export default class VoitureImages extends React.Component{
     render() {
         return (
-            <div className={this.props.class7}>
+            <div className={this.props.class5}>
                 {/* Row 1 */}
                 <div className="row img">
                     <div className="col-3">

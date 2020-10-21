@@ -4,13 +4,14 @@ import "../../sass/style.sass";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import Footer from "../footer/Footer";
 
 export default class ImagesVilles extends React.Component {
     render() {
         return (
             <div className={this.props.class2}>
                 {/* Row 1 */}
-                <div className="row img">
+                <div className="row paysagesImg">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
                             <img src="../../img/villes/img1.jpg" alt="a" className="card-img-top border-none" />
@@ -61,7 +62,7 @@ export default class ImagesVilles extends React.Component {
                     </div>
                 </div>
                 {/* Row 2 */}
-                <div className="row img">
+                <div className="row paysagesImg">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
                             <img src="../../img/villes/img5.jpg" alt="a" className="card-img-top border-none" />
@@ -112,7 +113,7 @@ export default class ImagesVilles extends React.Component {
                     </div>
                 </div>
                 {/* Row 3 */}
-                <div className="row img">
+                <div className="row paysagesImg">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
                             <img src="../../img/villes/img9.jpg" alt="a" className="card-img-top border-none" />
@@ -163,7 +164,7 @@ export default class ImagesVilles extends React.Component {
                     </div>
                 </div>
                 {/* Row 4 */}
-                <div className="row img">
+                <div className="row paysagesImg">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
                             <img src="../../img/villes/img13.jpg" alt="a" className="card-img-top border-none" />
@@ -214,7 +215,7 @@ export default class ImagesVilles extends React.Component {
                     </div>
                 </div>
                 {/* Row 5 */}
-                <div className="row img">
+                <div className="row paysagesImg">
                     <div className="col-3">
                         <div className="card" style={{ width: '18rem' }}>
                             <img src="../../img/villes/img17.jpg" alt="a" className="card-img-top border-none" />
@@ -264,6 +265,7 @@ export default class ImagesVilles extends React.Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

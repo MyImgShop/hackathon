@@ -7,22 +7,24 @@ import ImagesVilles from './components/imagesVilles/ImagesVilles'
 import ImagesMontagnes from './components/imagesMontagnes/ImagesMontagnes'
 import VoituresImages from './components/voitureImage/VoitureImage'
 import Boutons from './components/boutons/Boutons.js'
+import Contact from './components/contact/contact';
+import Panier from "./components/panier/panier";
 
 export default class App extends React.Component {
-  constructor(){
+  constructor() {
     super()
     this.state = {
-      class1 : "d-none",
-      class2 : "d-none",
-      class3 : "d-none",
-      class4 : "d-none",
-      class5 : "d-none",
+      class1: "d-none",
+      class2: "d-none",
+      class3: "d-none",
+      class4: "d-none",
+      class5: "d-none",
     }
   }
   affichePaysage = () => {
     let a = this.state
     a.class1 = "d-block"
-    a.class2  = "d-none"
+    a.class2 = "d-none"
     a.class3 = "d-none"
     a.class4 = "d-none"
     a.class5 = "d-none"
@@ -31,7 +33,7 @@ export default class App extends React.Component {
   }
   afficheVilles = () => {
     let b = this.state
-    b.class1  = "d-none"
+    b.class1 = "d-none"
     b.class2 = "d-block"
     b.class3 = "d-none"
     b.class4 = "d-none"
@@ -40,16 +42,16 @@ export default class App extends React.Component {
   }
   afficheMontagne = () => {
     let g = this.state
-    g.class1  = "d-none"
+    g.class1 = "d-none"
     g.class2 = "d-none"
     g.class3 = "d-block"
     g.class4 = "d-none"
     g.class5 = "d-none"
     this.setState(g)
   }
-  affichePlage= () => {
+  affichePlage = () => {
     let h = this.state
-    h.class1  = "d-none"
+    h.class1 = "d-none"
     h.class2 = "d-none"
     h.class3 = "d-none"
     h.class4 = "d-block"
@@ -100,10 +102,10 @@ export default class App extends React.Component {
               </video>
             </Route>
             <Route path="/panier">
-              {/* Rajouter le Composant Panier ici */}
+              <Panier />
             </Route>
             <Route path="/contact">
-              {/* Ancrage vers le footer */}
+              <Contact />
             </Route>
             <Route path="/">
               <Navbar />

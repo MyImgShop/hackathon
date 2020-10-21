@@ -1,6 +1,7 @@
 import React from 'react';
-import Footer  from './component/Footer'
-import Boutons from './component/Boutons'
+import Boutons from './components/footer/Boutons'
+import CardImages from './components/cardImages/cardImages';
+import Footer  from './components/footer/Footer'
 
 
 export default class App extends React.Component{
@@ -9,6 +10,7 @@ export default class App extends React.Component{
     return(
       <div> 
         <Boutons/>
+        <CardImages />
         <Footer />
       </div>
     )

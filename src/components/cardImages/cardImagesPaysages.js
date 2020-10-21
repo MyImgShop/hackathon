@@ -5,10 +5,14 @@ import "../../sass/style.sass";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
+import Boutons from "../boutons/Boutons";
+import Footer from "../footer/Footer";
+
 export default class CardImages extends React.Component {
     render() {
         return (
             <div>
+                <Boutons/>
                 {/* Row 1 */}
                 <div className="row paysagesImg">
                     <div className="col-3">
@@ -264,6 +268,7 @@ export default class CardImages extends React.Component {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }

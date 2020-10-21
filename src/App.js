@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './component/acceuil/Navbar.js';
+import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CardImages from './components/cardImages/cardImagesPaysages';
 
@@ -19,6 +19,19 @@ export default class App extends React.Component {
           <Switch>
             <Route path="/categories">
               <CardImages />
+              <video autoPlay loop muted
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "400vh",
+                  left: "50%",
+                  top: "50%",
+                  objectFit: "cover",
+                  transform: "translate(-50%, -50%)",
+                  zIndex: "-2"
+                }}>
+                <source src={video} type="video/mp4" />
+              </video>
             </Route>
             <Route path="/panier">
               {/* Rajouter le Composant Panier ici */}
@@ -35,9 +48,9 @@ export default class App extends React.Component {
           style={{
             position: "absolute",
             width: "100%",
+            height: "100%",
             left: "50%",
             top: "50%",
-            height: "100%",
             objectFit: "cover",
             transform: "translate(-50%, -50%)",
             zIndex: "-2"

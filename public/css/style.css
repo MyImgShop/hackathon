@@ -7799,7 +7799,8 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 20px; }
   .boutonsCategories button {
     border: 2px solid black; }
 
@@ -7846,7 +7847,8 @@ body {
   flex-direction: column;
   background-color: #23272B;
   color: white;
-  mar-top: 20px; }
+  margin-top: 20px;
+  font-weight: bold; }
   .footer .row .col-4 {
     padding: 50px;
     padding-left: 20px;
